@@ -1,0 +1,13 @@
+[package]
+name = "cargo-cleaner"
+version = "0.1.0"
+edition = "2021"
+
+build = "build.rs"
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+eyre = "0.6.12"
+
+[build-dependencies]
+vergen = { version = "9.0.0", features = ["build", "cargo", "rustc", "si"] }
